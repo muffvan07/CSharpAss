@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <div class="jumbotron">
+        <h1>Customer Management</h1>
+        <p class="lead">Click Any One to go to desired List Page.</p>
+        <a class="fa fa-building btn btn-primary" style="margin:3px" href="@Url.Action("CityList", "City", new { Area = "CityArea"})"><i class="fa fa-foo"></i>&nbsp;Cities</a>
+        <a class="fa fa-users btn btn-primary" style="margin:3px" href="@Url.Action("CustomerList", "Customer", new { Area = "CustomerArea"})"><i class="fa fa-foo"></i>&nbsp;Customers</a>
+        <p></p>
+    </div>
+
